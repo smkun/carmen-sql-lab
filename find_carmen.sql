@@ -93,11 +93,6 @@ SELECT *
 FROM city
 WHERE id = 211;
 
-SELECT *
-FROM city
-WHERE id = 211;
-UPDATE 1
-
  id  |   name   | countrycode |     district     | population
 -----+----------+-------------+------------------+------------
  211 | Brasília | BRA         | Distrito Federal |    1969868
