@@ -1,31 +1,4 @@
--- TEST COMMAND AND SAMPLE OUTPUT
--- Record your query (or queries, some clues require more than one) below the clue, then comment out the output below it
--- use two `-` to comment at the start of a line, or highlight the text and press `⌘/` to toggle comments
--- EXAMPLE: SELECT ALL FROM THE TABLE COUNTRY AND LIMIT IT TO ONE ENTRY
-
-SELECT * FROM COUNTRY LIMIT 1;
-
---  -[ RECORD 1 ]--+--------------------------
--- code           | AFG
--- name           | Afghanistan
--- continent      | Asia
--- region         | Southern and Central Asia
--- surfacearea    | 652090
--- indepyear      | 1919
--- population     | 22720000
--- lifeexpectancy | 45.9
--- gnp            | 5976.00
--- gnpold         |
--- localname      | Afganistan/Afqanestan
--- governmentform | Islamic Emirate
--- headofstate    | Mohammad Omar
--- capital        | 1
--- code2          | AF
-
-
 -- Clue #1: We recently got word that someone fitting Carmen Sandiego's description has been traveling through Southern Europe. She's most likely traveling someplace where she won't be noticed, so find the least populated country in Southern Europe, and we'll start looking for her there.
--- Find the least populated country in Southern Europe
--- Find the least populated country in Southern Europe
 SELECT name
 FROM country
 WHERE region = 'Southern Europe'
@@ -81,7 +54,6 @@ WHERE population = 91084;
 -- So I'm off to add one to the population I find
 -- In a city of ninety-one thousand and now, eighty five.
 
-
 -- We're counting on you, gumshoe. Find out where she's headed, send us the info, and we'll be sure to meet her at the gates with bells on.
 "Commit: CARMEN SANDIEGO - I found Carmen Sandiego - Sanata Monica, Brazil"
 
@@ -111,3 +83,4 @@ UPDATE 1
 -----+-------------+-------------+-------------+------------
  428 | Sertãozinho | BRA         | Sï¿½o Paulo |      98140
 (1 row)
+
