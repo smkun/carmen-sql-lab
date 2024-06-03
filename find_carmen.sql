@@ -92,9 +92,22 @@ WHERE id = 211;
 SELECT *
 FROM city
 WHERE id = 211;
+UPDATE 1
 
  id  |   name   | countrycode |     district     | population
 -----+----------+-------------+------------------+------------
  211 | Brasília | BRA         | Distrito Federal |    1969868
 (1 row)
 
+UPDATE city
+SET name = 'Sertãozinho'
+WHERE name = 'Sertï¿½ozinho' AND countrycode = 'BRA';
+
+SELECT *
+FROM city
+WHERE name = 'Sertãozinho' AND countrycode = 'BRA';
+UPDATE 1
+ id  |    name     | countrycode |  district   | population
+-----+-------------+-------------+-------------+------------
+ 428 | Sertãozinho | BRA         | Sï¿½o Paulo |      98140
+(1 row)
